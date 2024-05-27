@@ -224,7 +224,77 @@
                         }
                     }
                     if(ele[3]=='R'){
-
+                        if((Number)(cur[0])==(Number)(pos[0])){
+                            for(a in rednamelist){
+                                var ch=rednamelist[a];
+                                var asd=localStorage.getItem(ch);
+                                if((Number)(pos[0])==(Number)(asd[0])){
+                                    if(((Number)(cur[2])+9)%10+1>((Number)(asd[2])+9)%10+1){
+                                        if(((Number)(pos[2])+9)%10+1<((Number)(asd[2])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                    if(((Number)(cur[2])+9)%10+1<((Number)(asd[2])+9)%10+1){
+                                        if(((Number)(pos[2])+9)%10+1>((Number)(asd[2])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                }
+                            }
+                            for(a in blacknamelist){
+                                var ch=blacknamelist[a];
+                                var asd=localStorage.getItem(ch);
+                                if((Number)(pos[0])==(Number)(asd[0])){
+                                    if(((Number)(cur[2])+9)%10+1>((Number)(asd[2])+9)%10+1){
+                                        if(((Number)(pos[2])+9)%10+1<((Number)(asd[2])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                    if(((Number)(cur[2])+9)%10+1<((Number)(asd[2])+9)%10+1){
+                                        if(((Number)(pos[2])+9)%10+1>((Number)(asd[2])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                }
+                            }
+                            return true;
+                        }
+                        if((Number)(cur[2])==(Number)(pos[2])){
+                            for(a in rednamelist){
+                                var ch=rednamelist[a];
+                                var asd=localStorage.getItem(ch);
+                                if((Number)(pos[2])==(Number)(asd[2])){
+                                    if(((Number)(cur[0])+9)%10+1>((Number)(asd[0])+9)%10+1){
+                                        if(((Number)(pos[0])+9)%10+1<((Number)(asd[0])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                    if(((Number)(cur[0])+9)%10+1<((Number)(asd[0])+9)%10+1){
+                                        if(((Number)(pos[0])+9)%10+1>((Number)(asd[0])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                }
+                            }
+                            for(a in blacknamelist){
+                                var ch=blacknamelist[a];
+                                var asd=localStorage.getItem(ch);
+                                if((Number)(pos[2])==(Number)(asd[2])){
+                                    if(((Number)(cur[0])+9)%10+1>((Number)(asd[0])+9)%10+1){
+                                        if(((Number)(pos[0])+9)%10+1<((Number)(asd[0])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                    if(((Number)(cur[0])+9)%10+1<((Number)(asd[0])+9)%10+1){
+                                        if(((Number)(pos[0])+9)%10+1>((Number)(asd[0])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                }
+                            }
+                            return true;
+                        }
+                        return false;
                     }
                     else if(ele[3]=='K'&&ele.length==4){
                         if(pos==localStorage.getItem("BlackK")){
@@ -331,8 +401,77 @@
                             return false;
                         }
                     }
-                    if(ele[5]=='R'){
-
+                    if(ele[5]=='R'){if((Number)(cur[0])==(Number)(pos[0])){
+                            for(a in rednamelist){
+                                var ch=rednamelist[a];
+                                var asd=localStorage.getItem(ch);
+                                if((Number)(pos[0])==(Number)(asd[0])){
+                                    if(((Number)(cur[2])+9)%10+1>((Number)(asd[2])+9)%10+1){
+                                        if(((Number)(pos[2])+9)%10+1<((Number)(asd[2])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                    if(((Number)(cur[2])+9)%10+1<((Number)(asd[2])+9)%10+1){
+                                        if(((Number)(pos[2])+9)%10+1>((Number)(asd[2])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                }
+                            }
+                            for(a in blacknamelist){
+                                var ch=blacknamelist[a];
+                                var asd=localStorage.getItem(ch);
+                                if((Number)(pos[0])==(Number)(asd[0])){
+                                    if(((Number)(cur[2])+9)%10+1>((Number)(asd[2])+9)%10+1){
+                                        if(((Number)(pos[2])+9)%10+1<((Number)(asd[2])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                    if(((Number)(cur[2])+9)%10+1<((Number)(asd[2])+9)%10+1){
+                                        if(((Number)(pos[2])+9)%10+1>((Number)(asd[2])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                }
+                            }
+                            return true;
+                        }
+                        if((Number)(cur[2])==(Number)(pos[2])){
+                            for(a in rednamelist){
+                                var ch=rednamelist[a];
+                                var asd=localStorage.getItem(ch);
+                                if((Number)(pos[2])==(Number)(asd[2])){
+                                    if(((Number)(cur[0])+9)%10+1>((Number)(asd[0])+9)%10+1){
+                                        if(((Number)(pos[0])+9)%10+1<((Number)(asd[0])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                    if(((Number)(cur[0])+9)%10+1<((Number)(asd[0])+9)%10+1){
+                                        if(((Number)(pos[0])+9)%10+1>((Number)(asd[0])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                }
+                            }
+                            for(a in blacknamelist){
+                                var ch=blacknamelist[a];
+                                var asd=localStorage.getItem(ch);
+                                if((Number)(pos[2])==(Number)(asd[2])){
+                                    if(((Number)(cur[0])+9)%10+1>((Number)(asd[0])+9)%10+1){
+                                        if(((Number)(pos[0])+9)%10+1<((Number)(asd[0])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                    if(((Number)(cur[0])+9)%10+1<((Number)(asd[0])+9)%10+1){
+                                        if(((Number)(pos[0])+9)%10+1>((Number)(asd[0])+9)%10+1){
+                                            return false;
+                                        }
+                                    }
+                                }
+                            }
+                            return true;
+                        }
+                        return false;
                     }
                     else if(ele[5]=='K'&&ele.length==6){
                         if(pos==localStorage.getItem("RedK")){
